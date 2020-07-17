@@ -1,42 +1,179 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AKAN NAME FINDER</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css"> 
-    <script src="js/script.js"></script>
-</head>
-<body>
-    <div class="form elemets">
-        <div class="description">
-            <h1 class="display-4 text-primary">The Akan Name Finder </h1>
-            <p>This is a website that helps to determine your name based on the day of the week one was born.
-                Akan Naming is a Ghanian system,it generaes both male and female names.<br>
-                If you are a male,you will be named as follows; </p>
-            <p>Sunday-Kwasi, Monday-Kwadwo, Tuesday-Kwabena, Wednesday-Kwaku, Thursday-Yaw, Friday-Kofi, Saturday-Kwame</p>
-            <p>Else if you are female;</p>
-            <p>Sunday-Akosua, Monday-Adwoa, Tuesday-Abenaa, Wednesday-Akua, Thursday-Yaa, Friday-Afua, Saturday-Ama</p>
-    </div>
-    <form>
-        <h1 class="text-primary">Enter your birth date:</h1>
-        <input type="text" id="day" class="form-control" placeholder="day">
-        <p id="dayerror"></p>
-
-        <input type="text" id="month" class="form-control" placeholder="month">
-        <p id="montherror"></p>
-
-        <input type="text" id="year" class="form-control" placeholder="Year">
-        <p id="yearerror"></p>
-
-        <h1 text-primary>Select your gender</h1>
-        <label for="male">Male:</label>
-        <input type="checkbox" id="male" class="">
-        <label for="female">Female:</label>
-        <input type="checkbox" id="female" class=""><br>
-        <p id="checkboxerror"></p>
-
-        <button type="button" onclick="fn()" class="btn btn-large btn-block btn-outline-primary">Submit</button>
-    </form>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Akan Names</title>
+	</head>
+	<body>
+		<main>
+			<div class="container-fluid ht-100v firstclass">
+				<div class="firstcontent">
+					<h1 class="akan text-center">Ak<span>an Nam</span>es</h1>
+					<p class="text-center myhead myhead1">
+						You wanna know your Akan name??
+					</p>
+					<p class="text-center myhead">
+						Let's go then.
+					</p>
+				</div>
+			</div>
+			<div class="container mycard">
+				<h2 class="card-title text-center howit">
+					How It Works
+				</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card m-4">
+							<div class="cardx">
+								<p>y<span>ea</span>r</p>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">Enter Year Of Birth</h4>
+								<p class="card-text">
+									Enter The year you were born so as to generate your akan
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card m-4">
+							<div class="cardx">
+								<p>m<span>ont</span>h</p>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">Enter Month Of Birth</h4>
+								<p class="card-text">
+									Enter The month you were born so as to generate your akan
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card m-4">
+							<div class="cardx">
+								<p>d<span>a</span>y</p>
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">Enter Year Of Birth</h4>
+								<p class="card-text">
+									Enter The year you were born so as to generate your akan
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="displayme container">
+				<div class="alert-success alert myalert container" id="alert1">
+					<p>
+						<span id="span1"></span>
+						<span id="span2"></span>
+					</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="alert-danger alert myalert container" id="alert2">
+					<p>
+						<span id="span3"></span>
+					</p>
+				</div>
+			</div>
+			<div class="container jumbotron myform">
+				<h3 class="form-head">
+					Fill Form To Get Your Akan Name And A Free Bracelet
+				</h3>
+				<form class="form-group" onsubmit="event.preventDefault()">
+					<div class="form-group">
+						<label for="year">Enter The year you were born:</label>
+						<input
+							id="year"
+							type="text"
+							class="form-control"
+							max="2019"
+							min="1500"
+							max-length="4"
+							size="4"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<label for="month">Enter the month you were born:</label>
+						<input
+							id="month"
+							type="text'"
+							class="form-control"
+							min="1"
+							max="12"
+							max-length="2"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<label for="day">Enter the day you were born:</label>
+						<input
+							id="day"
+							type="text"
+							class="form-control"
+							min="1"
+							max="31"
+							max-length="2"
+							required
+						/>
+						<div class="myradio">
+							<label for="radio" class="radio-inline">
+								<input
+									type="radio"
+									value="female"
+									name="gender"
+									id="male"
+									required
+								/>
+								Male </label
+							><br />
+							<label for="radio" class="radio-inline">
+								<input
+									type="radio"
+									value="female"
+									name="gender"
+									id="female"
+									required
+								/>
+								Female
+							</label>
+						</div>
+					</div>
+					<button
+						type="submit"
+						id="submit"
+						class="btn btn-primary"
+						onclick="getAkanName()"
+						value="submit"
+					>
+						Submit
+					</button>
+					<button
+						type="reset"
+						class="btn btn-danger mybtn"
+						value="reset"
+						onclick="refreshPage()"
+					>
+						Reset
+					</button>
+				</form>
+			</div>
+			<div class="container-fluid footer">
+				<p>&copy; Otieno Valary</p>
+			</div>
+		</main>
+		<script src="./js/script.js"></script>
+-	</body>
 </html>
