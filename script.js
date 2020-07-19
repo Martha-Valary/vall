@@ -37,7 +37,9 @@ function getAkanName() {
 	var day = parseInt(document.getElementById("day").value);
 	var male = document.getElementById("male");
 	var female = document.getElementById("female");
-
+alert(year);
+alert(month);
+alert(day);
 	//validate date
 	if (day <= 0 || day >= 32) {
 		alert(
