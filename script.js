@@ -16,7 +16,7 @@ function getMonth() {
   return month;
 }
 function dDay() {
-  document.getElementById("myDay").value = parseInt(prompt("Enter the month you were born:"));
+  document.getElementById("myDay").value = parseInt(prompt("Enter the day you were born:"));
   day = parseInt(document.getElementById("myDay").value);
   if (day < 1 || day > 31) {
     document.getElementById("myDay").value = parseInt(prompt("Enter a valid day between 1 and 31:"));
@@ -79,37 +79,30 @@ function myFunction() {
     }
   } else {
     if (dayofweek == 0) {
-      alert(man[0]);
       alert("Akan name is " + man[0]);
     }
 
     if (dayofweek == 1) {
-      alert(man[1]);
       alert("Akan name is " + man[1]);
     }
 
     if (dayofweek == 2) {
-      alert(man[2]);
       alert("Akan name is " + man[2]);
     }
 
     if (dayofweek == 3) {
-      alert(man[3]);
       alert("Akan name is " + man[3]);
     }
 
     if (dayofweek == 4) {
-      alert(man[4]);
       alert("Akan name is " + man[4]);
     }
 
     if (dayofweek == 5) {
-      alert(man[5]);
       alert("Akan name is " + man[5]);
     }
 
-    if (dayofweek == 6) {
-      alert(man[6]);
+    if (dayofweek =6) {
       alert("Akan name is " + man[6]);
     }
   }
