@@ -1,4 +1,3 @@
-/* imports files */
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rye&display=swap&subset=latin-ext");
 .container-fluid {
@@ -78,7 +77,6 @@ main {
 	margin-left: 50vh;
 }
 
-/* MEDIA QUERRY */
 @media only screen and (max-width: 670px) {
 	.myhead {
 		font-size: 20px;
